@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data panel</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+
+    <style>
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="javascript:void(0)" class="form">
+            <div class="form_front">
+                <div class="form_details">ADD DATA</div>
+                <select name="category" placeholder="Category" class="input" id="category">
+                    <option value="category" selected disabled>Category</option>
+                    <option value="Shirt">Shirt</option>
+                    <option value="Paint">Paint</option>
+                    <option value="T-shirt">T-Shirt</option>
+                </select>
+                <input type="text" class="input" id="name" placeholder="Name">
+                <input type="text" class="input" id="product" placeholder="Product No">
+                <input type="text" class="input" id="size" placeholder="Segmnet Size">
+                <input type="text" class="input" id="qty" placeholder="Quantity Per Set">
+                <input type="text" class="input" id="price" placeholder="Price Per Peice">
+                <input type="file" class="input" id="imageInput">
+                <div class="div">
+                    <button class="btn-donate" id="store">Submit</button>
+                    <a href="index.html" id="link"><button class="btn-donate view" id="view">View</button></a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- jquery -->
+    <script src="asset/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+
+    <!-- bundle.js -->
+    <script src="asset/js/data.js"></script>
+
+    <!-- ripple -->
+    <script src="asset/js/jquery.ripples-min.js"></script>
+
+    <!-- <script>
+        var c = document.getElementById('view').addEventListener('click', function(){
+            alert('done')
+        })
+    </script> -->
+</body>
+
+</html>
