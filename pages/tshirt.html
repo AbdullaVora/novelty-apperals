@@ -82,36 +82,19 @@
     <script src="../asset/js/bootstrap.bundle.min.js"></script>
 
     <!-- ripple -->
-    <!-- <script src="../asset/js/jquery.ripples-min.js"></script> -->
+    <script src="../asset/js/jquery.ripples-min.js"></script>
 
     <script>
         $(document).ready(function () {
 
-            // $('.ripple').ripples({
-            //     dropRadius: 20,
-            //     resolution: 256,
-            //     perturbance: 0.06,
-            // });
+            $('.ripple').ripples({
+                dropRadius: 20,
+                resolution: 256,
+                perturbance: 0.06,
+            });
 
             $("#loader").fadeOut(1000);
         });
-
-        var t_shirt = JSON.parse(localStorage.getItem('t-shirt'));
-        t_shirt = t_shirt.length;
-
-        let cardGroup = document.getElementById('card_group');
-        cardGroup.innerHTML = '';
-
-        for (let i = 0; i < t_shirt; i++) {
-            cardGroup.innerHTML += `
-            <div class="col-xxl-3 col-xl-4 col-md-6 mt-5">
-                <div class="card border-0 p-2">
-                    <div class="c-img border-3 border rounded-2">
-                        <img src="asset/img/Produkt_2_1800x1800.png" alt="" class="img-fluid object-fit-cover">
-                    </div>
-                </div>
-            </div>`
-        }
 
     </script>
 </body>
