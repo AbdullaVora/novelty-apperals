@@ -256,6 +256,7 @@ input::file-selector-button{
 
 .card{
     transition: all 8s linear !important;
+    cursor: pointer;
 }
 
 .card:hover .card-body{
@@ -263,3 +264,27 @@ input::file-selector-button{
     /* transition: all 2.5s linear; */
 }
 
+/* .card:hover .card-body{
+
+} */
+.card-body-hover{
+    overflow: hidden !important;
+    cursor: pointer;
+}
+.card-hover{
+    overflow: hidden !important;
+    transition: all .3s linear;
+}
+.card-body-hover:hover .card-hover{
+    opacity: 75% !important;
+}
+
+span{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.modal{
+    display: none;
+}
